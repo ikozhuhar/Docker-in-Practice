@@ -1,3 +1,3 @@
 <p align="center">
-<img src="https://github.com/ikozhuhar/Linux_CookBook/blob/main/img/Docker-in-practice.jpg">
+<img src="https://github.com/ikozhuhar/Docker-in-Practice/blob/main/img/Docker-in-practice.jpg">
 </p>
