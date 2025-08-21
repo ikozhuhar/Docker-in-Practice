@@ -1,6 +1,6 @@
 :white_check_mark: _**Задача:** <a name='1'>Собирать и запустить образ Docker</a>._
 
-Dockerfile
+##### Dockerfile
 
 ```ruby
 # Dockerfile – это текстовый файл, содержащий серию команд.
@@ -26,7 +26,7 @@ docker build .
 sudo docker tag <id_image> todoapp
 ```
 
-Запускаем контейнер Docker
+##### Запускаем контейнер Docker
 
 ```ruby
 # Подкоманда docker run запускает контейнер. Флаг -p перенаправляет порт контейнера 8000 в порт 8000 на хост-компьютере,
