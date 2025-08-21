@@ -13,7 +13,7 @@ FROM node
  CMD ["npm","start"]
 ```
 
-#### Собираем образ Docker
+##### Собираем образ Docker
 
 ```ruby
 docker build .
