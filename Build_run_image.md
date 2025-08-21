@@ -1,4 +1,4 @@
-:white_check_mark: _**Задача:** <a name='1'>Собирать образ Docker</a>._
+:white_check_mark: _**Задача:** <a name='1'>Собирать и запустить образ Docker</a>._
 
 ```ruby
 # Пишем Dockerfile. Dockerfile – это текстовый файл, содержащий серию команд.
