@@ -1,7 +1,9 @@
 :white_check_mark: _**Задача:** <a name='1'>Собирать и запустить образ Docker</a>._
 
+Dockerfil
+
 ```ruby
-# Пишем Dockerfile. Dockerfile – это текстовый файл, содержащий серию команд.
+# Dockerfile – это текстовый файл, содержащий серию команд.
 FROM node
  LABEL maintainer ian.miell@gmail.com
  RUN git clone -q https://github.com/docker-in-practice/todo.git
@@ -9,8 +11,11 @@ FROM node
  RUN npm install > /dev/null
  EXPOSE 8000
  CMD ["npm","start"]
+```
 
 # Собираем образ Docker
+
+```ruby
 docker build .
 ```
 
