@@ -1,6 +1,6 @@
 :white_check_mark: _**Задача:** <a name='1'>Собирать и запустить образ Docker</a>._
 
-Dockerfil
+Dockerfile
 
 ```ruby
 # Dockerfile – это текстовый файл, содержащий серию команд.
@@ -13,7 +13,7 @@ FROM node
  CMD ["npm","start"]
 ```
 
-# Собираем образ Docker
+### Собираем образ Docker
 
 ```ruby
 docker build .
