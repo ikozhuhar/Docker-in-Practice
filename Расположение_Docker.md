@@ -1,0 +1,44 @@
+:white_check_mark: _**Задача:** <a name='1'>Настройка постоянного расположения Docker</a>._
+
+#### 1. Создайте или отредактируйте файл конфигурации:
+
+```ruby
+sudo nano /etc/docker/daemon.json
+```
+
+#### 2. Добавьте конфигурацию:
+
+```ruby
+{
+  "data-root": "/home/dockeruser/mydocker"
+}
+```
+
+#### 3. Перезапустите Docker:
+
+```ruby
+sudo systemctl restart docker
+```
+
+#### 4. Проверка изменений
+
+```ruby
+sudo docker info | grep "Docker Root Dir"
+```
+
+### Важные замечания:
+
+#### 1. Права доступа: Убедитесь, что у пользователя/группы docker есть права на новую директорию:
+
+```ruby
+sudo chown -R root:docker /home/dockeruser/mydocker
+sudo chmod -R 770 /home/dockeruser/mydocker
+```
+
+#### 2. Миграция данных: Если у вас уже есть контейнеры и образы, их нужно переместить:
+
+```ruby
+sudo systemctl stop docker
+sudo rsync -aqxP /var/lib/docker/ /home/dockeruser/mydocker/
+sudo systemctl start docker
+```
