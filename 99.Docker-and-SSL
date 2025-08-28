@@ -1,0 +1,1 @@
+Развернут с помошью Docker и Docker-Compose в директории /opt/gitlab. На хостовой машине создана папка /srv/gitlab/config/ssl в которой находятся сертификаты, папка /srv/gitlab/logs в которой находятся логи и папка /srv/gitlab/data. Папки хоста связаны с папками внутри контейнера, что указанно в файле docker-compose.yml в разделе volumes.
